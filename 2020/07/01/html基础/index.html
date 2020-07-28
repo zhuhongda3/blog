@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/blog/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/blog/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="html,">
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.ico?v=5.1.2">
+
+
+
+
+
+
+<meta name="description" content="参考： https://www.w3school.com.cn 基本标签12345678910111213141516&amp;lt;!DOCTYPE&amp;gt;         文档类型&amp;lt;!--&amp;gt;              注释&amp;lt;html&amp;gt;&amp;lt;/html&amp;gt;      定义html文档&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;      文档的信息&amp;lt;meta">
+<meta name="keywords" content="html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="html介绍">
+<meta property="og:url" content="https://digfree.github.io/blog/2020/07/01/html基础/index.html">
+<meta property="og:site_name" content="prettywhoo&#39;s blog">
+<meta property="og:description" content="参考： https://www.w3school.com.cn 基本标签12345678910111213141516&amp;lt;!DOCTYPE&amp;gt;         文档类型&amp;lt;!--&amp;gt;              注释&amp;lt;html&amp;gt;&amp;lt;/html&amp;gt;      定义html文档&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;      文档的信息&amp;lt;meta">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://digfree.github.io/blog/images/post/0b55b319ebc4b745417e76ddc8fc1e178b821516.jpg">
+<meta property="og:updated_time" content="2020-07-01T09:26:35.366Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="html介绍">
+<meta name="twitter:description" content="参考： https://www.w3school.com.cn 基本标签12345678910111213141516&amp;lt;!DOCTYPE&amp;gt;         文档类型&amp;lt;!--&amp;gt;              注释&amp;lt;html&amp;gt;&amp;lt;/html&amp;gt;      定义html文档&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;      文档的信息&amp;lt;meta">
+<meta name="twitter:image" content="https://digfree.github.io/blog/images/post/0b55b319ebc4b745417e76ddc8fc1e178b821516.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/blog/',
+    scheme: 'Pisces',
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://digfree.github.io/blog/2020/07/01/html基础/">
+
+
+
+
+
+  <title>html介绍 | prettywhoo's blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/blog/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">prettywhoo's blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/blog/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/blog/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/blog/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/blog/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="//github.com/digfree" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://digfree.github.io/blog/blog/2020/07/01/html基础/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="prettywhoo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/blog/images/userphoto.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="prettywhoo's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">html介绍</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-07-01T13:59:30+08:00">
+                2020-07-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/前端基础/" itemprop="url" rel="index">
+                    <span itemprop="name">前端基础</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>参考： <a href="https://www.w3school.com.cn/tags/tag_phrase_elements.asp" target="_blank" rel="noopener">https://www.w3school.com.cn</a></p>
+<h3 id="基本标签"><a href="#基本标签" class="headerlink" title="基本标签"></a>基本标签</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE&gt;         文档类型</span><br><span class="line">&lt;!--&gt;              注释</span><br><span class="line">&lt;html&gt;&lt;/html&gt;      定义html文档</span><br><span class="line">&lt;head&gt;&lt;/head&gt;      文档的信息</span><br><span class="line">&lt;meta              html文档的元信息</span><br><span class="line">    content=<span class="string">""</span>     定义与 http-equiv 或 name 属性相关的元信息</span><br><span class="line">    http-equiv=<span class="string">""</span>  把 content 属性关联到 HTTP 头部</span><br><span class="line">    name=<span class="string">""</span>        把 content 属性关联到一个名称</span><br><span class="line">    scheme=<span class="string">""</span>      定义用于翻译 content 属性值的格式</span><br><span class="line">&gt;</span><br><span class="line">&lt;title&gt;&lt;/title&gt;    html文档的标题</span><br><span class="line">&lt;link&gt;             文档与外部资源的关系</span><br><span class="line">&lt;style&gt;&lt;/style&gt;    文档的样式信息</span><br><span class="line">&lt;body&gt;&lt;/body&gt;      可见的页面内容</span><br><span class="line">&lt;script&gt;&lt;/script&gt;</span><br><span class="line">&lt;noscript&gt;&lt;/noscript&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="H5-语义化标签"><a href="#H5-语义化标签" class="headerlink" title="H5 语义化标签"></a>H5 语义化标签</h3><p><a href="https://www.w3school.com.cn/html/html_layout.asp" target="_blank" rel="noopener">语义化布局</a><br><img src="/blog/images/post/0b55b319ebc4b745417e76ddc8fc1e178b821516.jpg" alt="语义化标签布局图片"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;header&gt;&lt;/header&gt;       定义 section 或 document 的页眉</span><br><span class="line">&lt;nav&gt;&lt;/nav&gt;             定义导航链接的部分</span><br><span class="line">&lt;section&gt;&lt;section&gt;      定义文档中的节（section、区段）</span><br><span class="line">&lt;article&gt;&lt;/article&gt;     定义外部的内容</span><br><span class="line">&lt;figure&gt;                用于对元素进行组合</span><br><span class="line">    &lt;figcation&gt;&lt;/figcation&gt;  定义 figure 元素的标题</span><br><span class="line">&lt;/figure&gt;       </span><br><span class="line">&lt;aside&gt;&lt;/aside&gt;         定义 article 以外的内容</span><br><span class="line">&lt;footer&gt;&lt;/footer&gt;       定义 section 或 document 的页脚</span><br></pre></td></tr></table></figure>
+<h3 id="文本标签"><a href="#文本标签" class="headerlink" title="文本标签"></a>文本标签</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">标题字大小h1-h6</span><br><span class="line">&lt;h1&gt;&lt;/h1&gt;</span><br><span class="line">&lt;h2&gt;&lt;/h2&gt;</span><br><span class="line">&lt;h3&gt;&lt;/h3&gt;</span><br><span class="line">&lt;h4&gt;&lt;/h4&gt;</span><br><span class="line">&lt;h5&gt;&lt;/h5&gt;</span><br><span class="line">&lt;h6&gt;&lt;/h6&gt;</span><br><span class="line">&lt;big&gt;&lt;/big&gt;         大字</span><br><span class="line">&lt;b&gt;&lt;/b&gt;             粗体字</span><br><span class="line">&lt;strong&gt;&lt;/strong&gt;   粗体字（强调）</span><br><span class="line">&lt;em&gt;&lt;/em&gt;           斜体字（强调）</span><br><span class="line">&lt;ul&gt;                无序列表</span><br><span class="line">    &lt;li&gt;&lt;/li&gt;       无序列表项目</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">&lt;ol <span class="built_in">type</span>=<span class="string">""</span>&gt;                有序列表</span><br><span class="line">    &lt;li&gt;&lt;/li&gt;</span><br><span class="line">&lt;/ol&gt;</span><br><span class="line">&lt;dl&gt;                定义列表</span><br><span class="line">    &lt;dt&gt;&lt;/dt&gt;       定义列表标题</span><br><span class="line">    &lt;dd&gt;&lt;/dd&gt;       定义列表项目</span><br><span class="line">&lt;dl&gt;</span><br><span class="line">&lt;a href=<span class="string">""</span> target=<span class="string">""</span>&gt;&lt;/a&gt;     超链接</span><br><span class="line">&lt;font&gt;              字体尺寸 颜色 大小(可弃用)</span><br><span class="line">&lt;center&gt;&lt;/center&gt;   文档居中(可弃用)</span><br><span class="line">&lt;sub&gt;               下标</span><br><span class="line">&lt;sup&gt;               上标</span><br><span class="line">&lt;br&gt;                换行</span><br><span class="line">&lt;p&gt;&lt;/p&gt;             段落</span><br><span class="line">&lt;del&gt;&lt;/del&gt;         删除线</span><br><span class="line">&lt;hr&gt;                水平线</span><br><span class="line">&lt;blockquote&gt;&lt;/blockquote&gt;   长引用</span><br></pre></td></tr></table></figure>
+<h3 id="表单标签"><a href="#表单标签" class="headerlink" title="表单标签"></a>表单标签</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">&lt;form                     表单</span><br><span class="line">    action=<span class="string">""</span></span><br><span class="line">    onsubmit=<span class="string">""</span></span><br><span class="line">&gt;&lt;/form&gt;</span><br><span class="line"></span><br><span class="line">&lt;input</span><br><span class="line">    id=<span class="string">""</span></span><br><span class="line">    class=<span class="string">""</span></span><br><span class="line">    name=<span class="string">""</span></span><br><span class="line">    <span class="built_in">type</span>=<span class="string">"text"</span>      可选值： text、number、tel、radio、checkbox、reset</span><br><span class="line">    value=<span class="string">""</span></span><br><span class="line">    maxlength=<span class="string">""</span></span><br><span class="line">    disabled</span><br><span class="line">    <span class="built_in">readonly</span>=</span><br><span class="line">    placeholder=<span class="string">""</span></span><br><span class="line">    autofocus=<span class="string">""</span></span><br><span class="line">    required</span><br><span class="line">&gt;</span><br><span class="line">&lt;/input&gt;</span><br><span class="line"></span><br><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">"radio"</span>&gt;       单选框</span><br><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">"checkbox"</span>&gt;    复选框</span><br><span class="line"></span><br><span class="line">&lt;textarea                  定义多行的文本输入控件</span><br><span class="line">    cols=<span class="string">""</span></span><br><span class="line">    rows=<span class="string">""</span></span><br><span class="line">    wrap=<span class="string">""</span></span><br><span class="line">&gt;</span><br><span class="line">&lt;/textarea&gt;</span><br><span class="line"></span><br><span class="line">&lt;select&gt;</span><br><span class="line">    &lt;option value=<span class="string">""</span>&gt;&lt;/option&gt;</span><br><span class="line">    &lt;optgroup label=<span class="string">""</span> disabled&gt;              标签定义选项组</span><br><span class="line">        &lt;option value=<span class="string">""</span>&gt;&lt;/option&gt;</span><br><span class="line">    &lt;/optgroup&gt;</span><br><span class="line">&lt;/select&gt;</span><br><span class="line"></span><br><span class="line">&lt;button&gt;&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="表格标签"><a href="#表格标签" class="headerlink" title="表格标签"></a>表格标签</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;table&gt;                   定义表格</span><br><span class="line">    &lt;caption align=<span class="string">""</span>&gt;&lt;/caption&gt;   表格标题，align可选值left,right,top,bottom</span><br><span class="line">    &lt;thead&gt;</span><br><span class="line">        &lt;th&gt;              表格头</span><br><span class="line">            &lt;td&gt;&lt;/td&gt;</span><br><span class="line">        &lt;/th&gt;</span><br><span class="line">    &lt;/thead&gt;</span><br><span class="line">    &lt;tbody&gt;</span><br><span class="line">        &lt;tr&gt;              表格中的行</span><br><span class="line">            &lt;td&gt;&lt;/td&gt;     表格中的单元</span><br><span class="line">        &lt;/tr&gt;</span><br><span class="line">    &lt;/tbody&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="嵌入标签"><a href="#嵌入标签" class="headerlink" title="嵌入标签"></a>嵌入标签</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;frame&gt;&lt;/frame&gt;</span><br><span class="line">&lt;applet&gt;&lt;/applet&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="字符标签"><a href="#字符标签" class="headerlink" title="字符标签"></a>字符标签</h3><p><a href="https://www.w3school.com.cn/html/html_entities.asp" target="_blank" rel="noopener">字符详情</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&amp;lt;   | &amp;<span class="comment">#60;     &lt;</span></span><br><span class="line">&amp;gt;   | &amp;<span class="comment">#62;     &gt;</span></span><br><span class="line">&amp;nbsp; | &amp;<span class="comment">#160;    不断行的空白（1个字符宽度）</span></span><br><span class="line">&amp;ensp; | &amp;<span class="comment">#8194;   半个空白（1个字符宽度）</span></span><br><span class="line">&amp;emsp; | &amp;<span class="comment">#8195;   一个空白（2个字符宽度）</span></span><br><span class="line">&amp;thinsp; | &amp;<span class="comment">#8201; 窄空白（小于1个字符宽度）</span></span><br><span class="line">&amp;copy; | &amp;<span class="comment">#169;    ©</span></span><br><span class="line">&amp;reg;  | &amp;<span class="comment">#174;    ®</span></span><br><span class="line">&amp;quot; | &amp;<span class="comment">#34;     "</span></span><br><span class="line">&amp;qpos; | &amp;<span class="comment">#39;     '</span></span><br><span class="line">&amp;trade; | &amp;<span class="comment">#8482;  ™</span></span><br><span class="line">&amp;amp;  | &amp;<span class="comment">#38;     &amp;</span></span><br><span class="line"></span><br><span class="line">颜色值：</span><br><span class="line">aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white, yellow</span><br></pre></td></tr></table></figure></p>
+<h3 id="媒体标签"><a href="#媒体标签" class="headerlink" title="媒体标签"></a>媒体标签</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=<span class="string">""</span> alt=<span class="string">""</span>&gt; 图片</span><br><span class="line">&lt;video</span><br><span class="line">    src=<span class="string">""</span>      视频的 URL</span><br><span class="line">    autoplay    立即播放</span><br><span class="line">    controls    向用户显示控件（例如：播放按钮）</span><br><span class="line">    loop        循环播放</span><br><span class="line">    muted       需要静音</span><br><span class="line">    preload=<span class="string">""</span>  预加载（autoplay时忽略该属性）</span><br><span class="line">    poster=<span class="string">""</span>   下载时显示的图像</span><br><span class="line">    width=<span class="string">""</span></span><br><span class="line">    height=<span class="string">""</span></span><br><span class="line">&gt;</span><br><span class="line">&lt;/video&gt;</span><br><span class="line">&lt;audio</span><br><span class="line">    src=<span class="string">""</span>      音频的 URL</span><br><span class="line">    autoplay</span><br><span class="line">    controls</span><br><span class="line">    loop</span><br><span class="line">    muted</span><br><span class="line">    preload=<span class="string">""</span></span><br><span class="line">&gt;</span><br><span class="line">&lt;/audio&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="画布标签"><a href="#画布标签" class="headerlink" title="画布标签"></a>画布标签</h3><p><a href="https://www.w3school.com.cn/tags/html_ref_canvas.asp" target="_blank" rel="noopener">canvas Api</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas&gt;&lt;/canvas&gt;         标签定义图形，比如图表和其他图像</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/html/" rel="tag"># html</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog/2020/06/24/css布局/" rel="next" title="css布局">
+                <i class="fa fa-chevron-left"></i> css布局
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/blog/2020/07/28/第三方服务平台/" rel="prev" title="第三方服务平台 小程序开发">
+                第三方服务平台 小程序开发 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/blog/images/userphoto.jpg" alt="prettywhoo">
+          <p class="site-author-name" itemprop="name">prettywhoo</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/blog/archives/">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/blog/categories/index.html">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/blog/tags/index.html">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本标签"><span class="nav-number">1.</span> <span class="nav-text">基本标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#H5-语义化标签"><span class="nav-number">2.</span> <span class="nav-text">H5 语义化标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本标签"><span class="nav-number">3.</span> <span class="nav-text">文本标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表单标签"><span class="nav-number">4.</span> <span class="nav-text">表单标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表格标签"><span class="nav-number">5.</span> <span class="nav-text">表格标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#嵌入标签"><span class="nav-number">6.</span> <span class="nav-text">嵌入标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符标签"><span class="nav-number">7.</span> <span class="nav-text">字符标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#媒体标签"><span class="nav-number">8.</span> <span class="nav-text">媒体标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#画布标签"><span class="nav-number">9.</span> <span class="nav-text">画布标签</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">prettywhoo</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/blog/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/blog/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/blog/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
