@@ -95,12 +95,12 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="prettywhoo&#39;s blog">
+<meta property="og:title" content="digfree&#39;s blog">
 <meta property="og:url" content="https://digfree.github.io/blog/index.html">
-<meta property="og:site_name" content="prettywhoo&#39;s blog">
+<meta property="og:site_name" content="digfree&#39;s blog">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="prettywhoo&#39;s blog">
+<meta name="twitter:title" content="digfree&#39;s blog">
 
 
 
@@ -135,7 +135,7 @@
 
 
 
-  <title>prettywhoo's blog</title>
+  <title>digfree's blog</title>
   
 
 
@@ -173,7 +173,7 @@
     <div class="custom-logo-site-title">
       <a href="/blog/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">prettywhoo's blog</span>
+        <span class="site-title">digfree's blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -280,16 +280,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://digfree.github.io/blog/blog/2020/07/28/第三方服务平台/">
+    <link itemprop="mainEntityOfPage" href="https://digfree.github.io/blog/blog/2020/09/30/微信小程序原生canvas绘图/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="prettywhoo">
+      <meta itemprop="name" content="digfree">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/blog/images/userphoto.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="prettywhoo's blog">
+      <meta itemprop="name" content="digfree's blog">
     </span>
 
     
@@ -299,7 +299,151 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/blog/2020/07/28/第三方服务平台/" itemprop="url">第三方服务平台 小程序开发</a></h1>
+                <a class="post-title-link" href="/blog/2020/09/30/微信小程序原生canvas绘图/" itemprop="url">微信小程序原生canvas绘图</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-09-30T10:08:14+08:00">
+                2020-09-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/programming/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="常用工具函数"><a href="#常用工具函数" class="headerlink" title="常用工具函数"></a>常用工具函数</h2><p>javasript:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br></pre></td><td class="code"><pre><span class="line">utils/util</span><br><span class="line">// 保存图片到相册</span><br><span class="line">function saveImage(imgUrl) &#123;</span><br><span class="line">  wx.saveImageToPhotosAlbum(&#123;</span><br><span class="line">    filePath: imgUrl,</span><br><span class="line">    success: (res) =&gt; &#123;</span><br><span class="line">      wx.showToast(&#123;</span><br><span class="line">        title: &apos;已保存到系统相册&apos;,</span><br><span class="line">        duration: 1500,</span><br><span class="line">        icon: &apos;success&apos;,</span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;,</span><br><span class="line">    fail: (res) =&gt; &#123;</span><br><span class="line">      if (</span><br><span class="line">        res.errMsg === &apos;saveImageToPhotosAlbum:fail auth deny&apos; ||</span><br><span class="line">        res.errMsg === &apos;saveImageToPhotosAlbum:fail authorize no response&apos;</span><br><span class="line">      ) &#123;</span><br><span class="line">        wx.getSetting(&#123;</span><br><span class="line">          success: (res) =&gt; &#123;</span><br><span class="line">            const authSetting = res.authSetting</span><br><span class="line">            if (!authSetting[&apos;scope.writePhotosAlbum&apos;]) &#123;</span><br><span class="line">              wx.showModal(&#123;</span><br><span class="line">                title: &apos;提示&apos;,</span><br><span class="line">                content: &apos;您未开启保存图片到相册的权限，请点击确定去开启权限！&apos;,</span><br><span class="line">                success: (res) =&gt; &#123;</span><br><span class="line">                  if(res.confirm)&#123;</span><br><span class="line">                    wx.openSetting()</span><br><span class="line">                  &#125;</span><br><span class="line">                &#125;,</span><br><span class="line">              &#125;)</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;,</span><br><span class="line">        &#125;)</span><br><span class="line">      &#125; else if (res.errMsg !== &apos;saveImageToPhotosAlbum:fail cancel&apos;) &#123;</span><br><span class="line">        wx.showToast(&#123;</span><br><span class="line">          title: &apos;图片保存失败&apos;,</span><br><span class="line">          duration: 1500</span><br><span class="line">        &#125;)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 寻找文字切换断点</span><br><span class="line">function findFillTextBreakPoint(text, width, context) &#123;</span><br><span class="line">  let min = 0</span><br><span class="line">  let max = text.length - 1</span><br><span class="line"></span><br><span class="line">  while (min &lt;= max) &#123;</span><br><span class="line">    const middle = Math.floor((min + max) / 2)</span><br><span class="line">    const middleWidth = context.measureText(text.substr(0, middle)).width</span><br><span class="line">    const oneCharWiderThanMiddleWidth = context.measureText(</span><br><span class="line">      text.substr(0, middle + 1)</span><br><span class="line">    ).width</span><br><span class="line">    if (middleWidth &lt;= width &amp;&amp; oneCharWiderThanMiddleWidth &gt; width) &#123;</span><br><span class="line">      return middle</span><br><span class="line">    &#125;</span><br><span class="line">    if (middleWidth &lt; width) &#123;</span><br><span class="line">      min = middle + 1</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      max = middle - 1</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  return -1</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 获取分割后的断点结果</span><br><span class="line">function getFillTextResult(text, width, context) &#123;</span><br><span class="line">  const result = []</span><br><span class="line">  let breakPoint = 0</span><br><span class="line">  while ((breakPoint = findFillTextBreakPoint(text, width, context)) !== -1) &#123;</span><br><span class="line">    result.push(text.substr(0, breakPoint))</span><br><span class="line">    text = text.substr(breakPoint)</span><br><span class="line">  &#125;</span><br><span class="line">  if (text) &#123;</span><br><span class="line">    result.push(text)</span><br><span class="line">  &#125;</span><br><span class="line">  return result</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 绘制时先请求图片</span><br><span class="line">function canvasCreateImage(canvas, url) &#123;</span><br><span class="line">  return new Promise((resolve, reject) =&gt; &#123;</span><br><span class="line">    const imgObj = canvas.createImage()</span><br><span class="line">    imgObj.onload = async () =&gt; &#123;</span><br><span class="line">      resolve(imgObj)</span><br><span class="line">    &#125;</span><br><span class="line">    imgObj.onerror = async (e) =&gt; &#123;</span><br><span class="line">      console.error(&apos;err:&apos;, e)</span><br><span class="line">      resolve(&apos;&apos;)</span><br><span class="line">    &#125;</span><br><span class="line">    imgObj.src = url</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// canvas转本地地址</span><br><span class="line">function canvasToTempFilePath(</span><br><span class="line">  canvas,</span><br><span class="line">  width,</span><br><span class="line">  height,</span><br><span class="line">  dpr,</span><br><span class="line">  quality = &apos;&apos;,</span><br><span class="line">  fileType = &apos;&apos;</span><br><span class="line">) &#123;</span><br><span class="line">  return new Promise((resolve, reject) =&gt; &#123;</span><br><span class="line">    wx.canvasToTempFilePath(&#123;</span><br><span class="line">      canvas,</span><br><span class="line">      width,</span><br><span class="line">      height,</span><br><span class="line">      destWidth: width * dpr,</span><br><span class="line">      destHeight: height * dpr,</span><br><span class="line">      x: 0,</span><br><span class="line">      y: 0,</span><br><span class="line">      quality: quality || &apos;1&apos;,</span><br><span class="line">      fileType: fileType || &apos;jpg&apos;,</span><br><span class="line">      success: (res) =&gt; &#123;</span><br><span class="line">        resolve(res.tempFilePath)</span><br><span class="line">      &#125;,</span><br><span class="line">      fail: (res) =&gt; &#123;</span><br><span class="line">        resolve(res)</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// rpx转px</span><br><span class="line">function rpx2px(rpx) &#123;</span><br><span class="line">  return Number(((wx.getSystemInfoSync().windowWidth / 750) * rpx).toFixed(0))</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 业务图片转微信本地图片地址</span><br><span class="line">function downloadFile(url) &#123;</span><br><span class="line">  return new Promise((resolve, reject) =&gt; &#123;</span><br><span class="line">    wx.downloadFile(&#123;</span><br><span class="line">      url,</span><br><span class="line">      success: (res) =&gt; &#123;</span><br><span class="line">        resolve(res.tempFilePath)</span><br><span class="line">      &#125;,</span><br><span class="line">      fail: (e) =&gt; &#123;</span><br><span class="line">        console.error(&apos;downloadFile:&apos;, e)</span><br><span class="line">        reject(&apos;&apos;)</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">module.exports = &#123;</span><br><span class="line">  saveImage,</span><br><span class="line">  findFillTextBreakPoint,</span><br><span class="line">  getFillTextResult,</span><br><span class="line">  canvasCreateImage,</span><br><span class="line">  canvasToTempFilePath,</span><br><span class="line">  rpx2px,</span><br><span class="line">  downloadFile</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="使用canvas进行绘制"><a href="#使用canvas进行绘制" class="headerlink" title="使用canvas进行绘制"></a>使用canvas进行绘制</h2><p>wxml:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas </span><br><span class="line">    id=&quot;myCanvas&quot; </span><br><span class="line">    type=&quot;2d&quot;</span><br><span class="line">    class=&quot;my-canvas&quot;</span><br><span class="line">    width=&quot;&#123;&#123;canvasWidth&#125;&#125;&quot; </span><br><span class="line">    height=&quot;&#123;&#123;canvasHeight&#125;&#125;&quot;</span><br><span class="line">    style=&quot;position: fixed;left: -100%;top: -500%;&quot;</span><br><span class="line">&gt;</span><br><span class="line">&lt;/canvas&gt;</span><br></pre></td></tr></table></figure></p>
+<p>javasript:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line">const common = require(&apos;../utils/util.js&apos;)</span><br><span class="line"></span><br><span class="line">wx.createSelectorQuery().select(&apos;#myCanvas&apos;).node(async (res) =&gt;&#123;</span><br><span class="line">    onst canvas = res.node</span><br><span class="line">    const ctx = canvas.getContext(&apos;2d&apos;)</span><br><span class="line">    const &#123; pixelRatio, windowWidth, windowHeight &#125; = wx.getSystemInfoSync().</span><br><span class="line">    canvas.width = canvasWidth * pixelRatio</span><br><span class="line">    canvas.height = canvasHeight * pixelRatio</span><br><span class="line">    ctx.scale(pixelRatio, pixelRatio)</span><br><span class="line"></span><br><span class="line">    //获取换行文字集合</span><br><span class="line">    const baseText = &apos;这是一段会换行的文字，很长很长。&apos;</span><br><span class="line">    const textMaxWidth = 375</span><br><span class="line">    const textList = common.getFillTextResult(</span><br><span class="line">        baseText,     // 文字</span><br><span class="line">        textMaxWidth, // 文字最大宽度</span><br><span class="line">    ctx)</span><br><span class="line"></span><br><span class="line">    //绘制换行文字</span><br><span class="line">    const textLeft = 0</span><br><span class="line">    const textTop = 0           // 文本距离画布顶部的初始距离</span><br><span class="line">    const textLineHeight = 12</span><br><span class="line"></span><br><span class="line">    textList.forEach((item,index) =&gt; &#123;</span><br><span class="line">        ctx.fillStyle = &apos;#000000&apos;</span><br><span class="line">        ctx.font = `$&#123;common.rpx2px(46)&#125;px 微软雅黑`</span><br><span class="line">        ctx.fillText(</span><br><span class="line">            item,</span><br><span class="line">            textLeft,                           // 文字距离左侧距离</span><br><span class="line">            textTop + index * textLineHeight    // 文字距离顶部距离</span><br><span class="line">        )</span><br><span class="line">    &#125;)</span><br><span class="line">    </span><br><span class="line">    //绘制图片</span><br><span class="line">    const imgWidth = 10</span><br><span class="line">    const imgHeight = 10</span><br><span class="line">    const imgWxUrl = await common.downloadFile(`https:xxxx`)</span><br><span class="line">    const imgUrl = await common.canvasCreateImage(canvas, imgWxUrl)</span><br><span class="line">    ctx.restore()</span><br><span class="line">    ctx.drawImage(</span><br><span class="line">        imgUrl,</span><br><span class="line">        0,          // 图片距离左侧距离 0 - n</span><br><span class="line">        imgTop,     // 图片距离顶部距离</span><br><span class="line">        imgWidth,   // 图片宽度</span><br><span class="line">        imgHeight   // 图片高度</span><br><span class="line">    )</span><br><span class="line">    ctx.save()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    // canvas画布转本地图片地址</span><br><span class="line">    const tempFilePath = await common.canvasToTempFilePath(</span><br><span class="line">        canvas,</span><br><span class="line">        canvasWidth,</span><br><span class="line">        canvasHeight,</span><br><span class="line">        pixelRatio</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">    // 保存图片到相册</span><br><span class="line">    common.saveImage(tempFilePath)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://digfree.github.io/blog/blog/2020/07/28/小程序开发/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="digfree">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/blog/images/userphoto.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="digfree's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blog/2020/07/28/小程序开发/" itemprop="url">小程序开发</a></h1>
         
 
         <div class="post-meta">
@@ -409,16 +553,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://digfree.github.io/blog/blog/2020/07/01/html基础/">
+    <link itemprop="mainEntityOfPage" href="https://digfree.github.io/blog/blog/2020/07/01/html标签/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="prettywhoo">
+      <meta itemprop="name" content="digfree">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/blog/images/userphoto.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="prettywhoo's blog">
+      <meta itemprop="name" content="digfree's blog">
     </span>
 
     
@@ -428,7 +572,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/blog/2020/07/01/html基础/" itemprop="url">html介绍</a></h1>
+                <a class="post-title-link" href="/blog/2020/07/01/html标签/" itemprop="url">html标签</a></h1>
         
 
         <div class="post-meta">
@@ -463,8 +607,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/前端基础/" itemprop="url" rel="index">
-                    <span itemprop="name">前端基础</span>
+                  <a href="/blog/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
                   </a>
                 </span>
 
@@ -564,13 +708,13 @@
     <link itemprop="mainEntityOfPage" href="https://digfree.github.io/blog/blog/2020/06/24/css布局/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="prettywhoo">
+      <meta itemprop="name" content="digfree">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/blog/images/userphoto.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="prettywhoo's blog">
+      <meta itemprop="name" content="digfree's blog">
     </span>
 
     
@@ -602,6 +746,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -683,13 +849,13 @@
     <link itemprop="mainEntityOfPage" href="https://digfree.github.io/blog/blog/2020/06/23/hexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="prettywhoo">
+      <meta itemprop="name" content="digfree">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/blog/images/userphoto.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="prettywhoo's blog">
+      <meta itemprop="name" content="digfree's blog">
     </span>
 
     
@@ -833,16 +999,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://digfree.github.io/blog/blog/2020/01/06/inteview/">
+    <link itemprop="mainEntityOfPage" href="https://digfree.github.io/blog/blog/2020/01/06/基础面试题/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="prettywhoo">
+      <meta itemprop="name" content="digfree">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/blog/images/userphoto.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="prettywhoo's blog">
+      <meta itemprop="name" content="digfree's blog">
     </span>
 
     
@@ -852,7 +1018,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/blog/2020/01/06/inteview/" itemprop="url">2017最经典的面试题</a></h1>
+                <a class="post-title-link" href="/blog/2020/01/06/基础面试题/" itemprop="url">基础面试题</a></h1>
         
 
         <div class="post-meta">
@@ -874,6 +1040,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/面试/" itemprop="url" rel="index">
+                    <span itemprop="name">面试</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -920,7 +1108,9 @@
 </li>
 <li><p>px和em和rem的区别，CSS中link 和@import的区别是?</p>
 </li>
-<li><p>了解过flex吗?</p>
+<li><p>了解过flex布局吗?</p>
+</li>
+<li><p>了解过grid布局吗?</p>
 </li>
 </ol>
 <h2 id="「-JavaScript-篇-」"><a href="#「-JavaScript-篇-」" class="headerlink" title="「 JavaScript 篇 」"></a>「 JavaScript 篇 」</h2><h3 id="JavaScript-基础"><a href="#JavaScript-基础" class="headerlink" title="JavaScript 基础"></a>JavaScript 基础</h3><ol>
@@ -1041,16 +1231,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://digfree.github.io/blog/blog/2020/01/06/前后端分离/">
+    <link itemprop="mainEntityOfPage" href="https://digfree.github.io/blog/blog/2020/01/06/前后端分离模式/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="prettywhoo">
+      <meta itemprop="name" content="digfree">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/blog/images/userphoto.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="prettywhoo's blog">
+      <meta itemprop="name" content="digfree's blog">
     </span>
 
     
@@ -1060,7 +1250,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/blog/2020/01/06/前后端分离/" itemprop="url">面试题</a></h1>
+                <a class="post-title-link" href="/blog/2020/01/06/前后端分离模式/" itemprop="url">前后端分离模式</a></h1>
         
 
         <div class="post-meta">
@@ -1082,6 +1272,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/面试/" itemprop="url" rel="index">
+                    <span itemprop="name">面试</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -1275,13 +1487,13 @@
     <link itemprop="mainEntityOfPage" href="https://digfree.github.io/blog/blog/2019/06/09/几点学习建议/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="prettywhoo">
+      <meta itemprop="name" content="digfree">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/blog/images/userphoto.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="prettywhoo's blog">
+      <meta itemprop="name" content="digfree's blog">
     </span>
 
     
@@ -1313,6 +1525,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/面试/" itemprop="url" rel="index">
+                    <span itemprop="name">面试</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -1401,13 +1635,13 @@
     <link itemprop="mainEntityOfPage" href="https://digfree.github.io/blog/blog/2018/11/20/前端基础/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="prettywhoo">
+      <meta itemprop="name" content="digfree">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/blog/images/userphoto.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="prettywhoo's blog">
+      <meta itemprop="name" content="digfree's blog">
     </span>
 
     
@@ -1452,8 +1686,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/programming/" itemprop="url" rel="index">
-                    <span itemprop="name">编程</span>
+                  <a href="/blog/categories/面试/" itemprop="url" rel="index">
+                    <span itemprop="name">面试</span>
                   </a>
                 </span>
 
@@ -1609,13 +1843,13 @@
     <link itemprop="mainEntityOfPage" href="https://digfree.github.io/blog/blog/2017/12/18/doT/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="prettywhoo">
+      <meta itemprop="name" content="digfree">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/blog/images/userphoto.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="prettywhoo's blog">
+      <meta itemprop="name" content="digfree's blog">
     </span>
 
     
@@ -1776,8 +2010,8 @@
 
       <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image" src="/blog/images/userphoto.jpg" alt="prettywhoo">
-          <p class="site-author-name" itemprop="name">prettywhoo</p>
+          <img class="site-author-image" itemprop="image" src="/blog/images/userphoto.jpg" alt="digfree">
+          <p class="site-author-name" itemprop="name">digfree</p>
            
               <p class="site-description motion-element" itemprop="description"></p>
           
@@ -1787,7 +2021,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/blog/archives/">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1798,7 +2032,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/blog/categories/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -1809,7 +2043,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/blog/tags/index.html">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -1855,7 +2089,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">prettywhoo</span>
+  <span class="author" itemprop="copyrightHolder">digfree</span>
 </div>
 
 
